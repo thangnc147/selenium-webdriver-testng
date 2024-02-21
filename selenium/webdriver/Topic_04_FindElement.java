@@ -38,7 +38,7 @@ public class Topic_04_FindElement {
 
         String successMessageText = driver.findElement(By.xpath("//li[@class='success-msg']//span")).getText();
         // Samsung Galaxy was added to your shopping cart.
-        Assert.assertEquals("Samsung Galaxy was added to your shopping cart.");
+        Assert.assertEquals(successMessageText, "Samsung Galaxy was added to your shopping cart.");
     }
 
     @Test

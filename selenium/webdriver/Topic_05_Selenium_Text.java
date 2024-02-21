@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+import static java.awt.SystemColor.text;
+
 public class Topic_05_Selenium_Text {
 
     WebDriver driver;
@@ -40,10 +42,11 @@ public class Topic_05_Selenium_Text {
         driver.findElement(By.xpath("//p[contains(text(),'Mail Personal or Business Check')]")).isDisplayed();
 
         // 2 - Get text ra rồi verify sau
-        driver.findElement(By.xpath("//h5[@id='nine']/p[1]")).getText();
+        String text = driver.findElement(By.xpath("//h5[@id='nine']/p[1]")).getText();
         // Mail Personal or Business Check, Cashier's Check or money order to:
-        Assert.assertTrue(String.contains("Mail Personal or Business Check"));
-        Assert.assertTrue(String.contains("Cashier's Check or money order to"));
+
+        Assert.assertTrue(text.contains("Mail Personal or Business Check"));
+        Assert.assertTrue(text.contains("Cashier's Check or money order to"));
         Assert.assertTrue(text.contains("Mail Personal or Business Check, Cashier's Check or money order to:"));
 
         String nestedText = driver.findElement(By.xpath("//h5[@id='nested']")).getText();
