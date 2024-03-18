@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -77,6 +78,20 @@ public class Topic_06_WebBrowser_Commands {
         checboxes.get(1).click();
 
         driver.findElement(By.cssSelector("button#login")).click();
+
+        tring loginURL = driver.getCurrentUrl();
+        driver.getPageSource();
+        driver.getTitle();
+        driver.getWindowHandle();
+        driver.getWindowHandles();
+
+        // Nếu chỉ dùng một lần thì không cần khai báo biến
+        Assert.assertEquals(driver.getCurrentUrl(),"https://www.facebook.com/");
+
+        // Nếu có thể dùng lại nhiều lần,
+        Assert.assertEquals(loginURL, "https://www.facebook.com/");
+
+
     }
 
     @Test
