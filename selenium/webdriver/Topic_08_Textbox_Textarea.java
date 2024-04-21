@@ -227,7 +227,7 @@ public class Topic_08_Textbox_Textarea {
         sleepInSeconds(3);
 
         // Step 10
-        String phoneNumber = "0333888555", comments = "ABCabc";
+        String phoneNumber = "333888555", comments = "ABCabc";
         driver.findElement(By.xpath("//label[text()='Number']/parent::div//following-sibling::div/input")).sendKeys(phoneNumber);
         driver.findElement(By.xpath("//label[text()='Comments']/parent::div//following-sibling::div/textarea")).sendKeys(comments);
 
@@ -238,8 +238,8 @@ public class Topic_08_Textbox_Textarea {
         driver.findElement(By.xpath("//i[@class='oxd-icon bi-pencil-fill']/parent::button")).click();
 
         // Step 12
-//        Assert.assertEquals(driver.findElement(By.xpath("//label[text()='Number']/parent::div//following-sibling::div/input")).getAttribute("_value"), phoneNumber);
-//        Assert.assertEquals(driver.findElement(By.xpath("//label[text()='Comments']/parent::div//following-sibling::div/textarea")).getAttribute("_value"), comments);
+        Assert.assertEquals(driver.findElement(By.xpath("//label[text()='Number']/parent::div//following-sibling::div/input")).getAttribute("value"), phoneNumber);
+        Assert.assertEquals(driver.findElement(By.xpath("//label[text()='Comments']/parent::div//following-sibling::div/textarea")).getAttribute("value"), comments);
 
         // Step 13
         driver.findElement(By.xpath("//span[@class='oxd-userdropdown-tab']")).click();
