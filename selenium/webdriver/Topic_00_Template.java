@@ -37,11 +37,6 @@ public class Topic_00_Template {
 
     }
 
-//    @Test
-//    public void TC_03 {
-//
-//    }
-
     @AfterClass
     public void afterClass() {
         driver.quit();
