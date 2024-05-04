@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class Topic_11_Button_Radio_Checkbox {
+public class Topic_11_Button {
 
     WebDriver driver;
     /*String projectPath = System.getProperty("user.dir");
