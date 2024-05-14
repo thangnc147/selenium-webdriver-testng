@@ -119,7 +119,7 @@ public class Topic_12_Radio_Checkbox {
     }
 
     @Test
-    public void TC_06_Custom_Checkbox_or_Radio() {
+    public void TC_06_Custom_Google_Checkbox_or_Radio() {
         driver.get("https://docs.google.com/forms/d/e/1FAIpQLSfiypnd69zhuDkjKgqvpID9kwO29UCzeCVrGGtbNPZXQok0jA/viewform");
 
         By radioCanTho = By.xpath("//span[text()='Cần Thơ']/parent::div/parent::div/preceding-sibling::div/div");
