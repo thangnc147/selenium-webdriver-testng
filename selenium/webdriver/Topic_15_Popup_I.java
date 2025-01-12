@@ -86,7 +86,7 @@ public class Topic_15_Popup_I {
         driver.findElement(By.cssSelector("img.close-img")).click();
 //        Assert.assertFalse(driver.findElement(By.cssSelector("div.ReactModal__Content")).isDisplayed());
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
         Assert.assertEquals(driver.findElements(By.cssSelector("div.ReactModal__Content")).size(), 0);
 
     }
