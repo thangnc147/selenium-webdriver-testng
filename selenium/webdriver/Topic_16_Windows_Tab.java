@@ -109,6 +109,9 @@ public class Topic_16_Windows_Tab {
         driver.findElement(By.xpath("//a[text()='Clear All']")).click();
 
         Assert.assertEquals(driver.switchTo().alert().getText(),"Are you sure you would like to remove all products from your comparison?");
+        driver.switchTo().alert().accept();
+
+        Assert.assertEquals(driver.findElement(By.cssSelector("li.success-msg span")).getText(), "The comparison list was cleared.");
 
     }
 
