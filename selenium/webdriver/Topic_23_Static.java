@@ -24,7 +24,7 @@ public class Topic_23_Static {
         driver.get("https://automationfc.github.io/dynamic-loading/");
 
         driver.findElement(By.cssSelector("div#start>button")).click();
-        Assert.assertEquals(driver.findElement(By.cssSelector("div#finish>h4")).getText(), "Hellow World!");
+        Assert.assertEquals(driver.findElement(By.cssSelector("div#finish>h4")).getText(), "Hello World!");
     }
 
 
@@ -41,7 +41,7 @@ public class Topic_23_Static {
         driver.get("https://automationfc.github.io/dynamic-loading/");
 
         driver.findElement(By.cssSelector("div#start>button")).click();
-        Assert.assertEquals(driver.findElement(By.cssSelector("div#finish>h4")).getText(), "Hellow World!");
+        Assert.assertEquals(driver.findElement(By.cssSelector("div#finish>h4")).getText(), "Hello World!");
     }
 
     @Test
@@ -49,7 +49,7 @@ public class Topic_23_Static {
         driver.get("https://automationfc.github.io/dynamic-loading/");
 
         driver.findElement(By.cssSelector("div#start>button")).click();
-        Assert.assertEquals(driver.findElement(By.cssSelector("div#finish>h4")).getText(), "Hellow World!");
+        Assert.assertEquals(driver.findElement(By.cssSelector("div#finish>h4")).getText(), "Hello World!");
     }
 
     @AfterClass
