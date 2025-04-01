@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="selenium-server-4.16.1" level="project" />
     <orderEntry type="library" name="commons-codec-1.16.0" level="project" />
+    <orderEntry type="library" name="commons-io-2.18.0" level="project" />
   </component>
 </module>

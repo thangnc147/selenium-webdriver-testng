@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Live Guru - Product" verbose="1">
+    <parameter name="server" value="LIVE"/>
+
+    <test name="Run on Chrome">
+        <classes>
+            <class name="testng_product_example.Product_01_CRUD"/>
+        </classes>
+    </test>
+
+</suite>
